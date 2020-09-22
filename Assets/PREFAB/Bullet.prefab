@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 6084047935862103723}
   - component: {fileID: 8397080159907186695}
   - component: {fileID: 5942749766377048207}
-  - component: {fileID: 5301709348085618775}
   - component: {fileID: -5128417400968359358}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,9 +115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: abca365ea828d9649801dec68f0b6847, type: 2}
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-183.0,"y":-147.0},"guid":"98036eec-4dcc-4e17-b1a0-6fb9dfdb9e0e","$version":"A","$type":"Bolt.Start","$id":"10"},{"chainable":false,"member":{"name":"velocity","parameterTypes":null,"targetType":"UnityEngine.Rigidbody2D","targetTypeName":"UnityEngine.Rigidbody2D","$version":"A"},"defaultValues":{"target":null,"input":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"}},"position":{"x":55.0,"y":-148.0},"guid":"9cc5ec7b-4320-41e8-bb0a-9344a906523c","$version":"A","$type":"Bolt.SetMember","$id":"12"},{"chainable":false,"member":{"name":".ctor","parameterTypes":["System.Single","System.Single"],"targetType":"UnityEngine.Vector2","targetTypeName":"UnityEngine.Vector2","$version":"A"},"defaultValues":{"%x":{"$content":-6.0,"$type":"System.Single"},"%y":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-127.0,"y":74.0},"guid":"c321d897-120f-49c0-be9e-9e1245554e23","$version":"A","$type":"Bolt.InvokeMember","$id":"15"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"PlayerBullet","$type":"System.String"},"object":null},"position":{"x":-201.0,"y":-52.0},"guid":"cf576304-655f-4b21-95d9-05bf41d1ad71","$version":"A","$type":"Bolt.GetVariable","$id":"18"},{"sourceUnit":{"$ref":"10"},"sourceKey":"trigger","destinationUnit":{"$ref":"12"},"destinationKey":"assign","guid":"50682c81-2f18-4e6a-8bb1-3bd07ec9f506","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"result","destinationUnit":{"$ref":"12"},"destinationKey":"input","guid":"aaee366c-8dd9-49d1-ba71-aa44eee2b59a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"value","destinationUnit":{"$ref":"12"},"destinationKey":"target","guid":"f441c8a7-feba-4367-8df2-6adedcb7ddeb","$type":"Bolt.ValueConnection"}],"$version":"A"}}}'
+    _objectReferences: []
 --- !u!58 &5942749766377048207
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -135,21 +133,6 @@ CircleCollider2D:
   m_Offset: {x: 0.00035204738, y: 0}
   serializedVersion: 2
   m_Radius: 0.09190301
---- !u!114 &5301709348085618775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5559108772560909805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
-    _objectReferences: []
 --- !u!50 &-5128417400968359358
 Rigidbody2D:
   serializedVersion: 4
