@@ -8,6 +8,21 @@ TagManager:
   - ScoreVar
   - PVVar
   - PlayerBullet
+  - 2ndBack
+  - BarrierBottom
+  - BarrierLeft
+  - 1stBack
+  - Player_Bullet
+  - Heal
+  - BadGuy
+  - Roquettes
+  - Nuke
+  - Shield
+  - Shield Spawn
+  - SpeedBoost
+  - Stalker_Bullet
+  - ZigZag_Bullet
+  - Lance-Roquettes
   layers:
   - Default
   - TransparentFX
@@ -45,6 +60,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
+  - name: Forefront
     uniqueID: 550765405
     locked: 0
